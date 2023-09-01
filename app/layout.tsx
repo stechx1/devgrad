@@ -32,7 +32,7 @@ export default function RootLayout({
           <body className={`${inter.className}`}>
             <MobileNav />
             <Navbar />
-            {children}
+            {children}x
           </body>
         </html>
       </ConfigProvider>

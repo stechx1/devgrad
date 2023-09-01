@@ -13,7 +13,7 @@ export const MobileNav = () => {
   return (
     <>
       <div className='flex md:hidden border-b px-5 py-3 items-center justify-between'>
-        <img src='/logo-dark.svg' alt='logo' />
+        <img src='/logo-dark.svg' alt='logo' width={60} />
 
         <div className=''>
           {navOpen ? (

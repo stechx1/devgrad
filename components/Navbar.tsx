@@ -38,7 +38,7 @@ export const Navbar = () => {
   return (
     <div className=" gap-4 md:flex hidden bg-gray-100 py-2">
       <div className="container mx-auto flex justify-between items-center">
-        <img src="/logo.svg" alt="logo" />
+        <img width={80} src="/logo-dark.svg" alt="logo" />
         <div className="flex gap-10">
           {navItems.map((item) => (
             <Link
