@@ -4,13 +4,17 @@ interface TestCaseProps {
   number: string;
   name: string;
   buttonText: string;
+  loading: boolean;
   icon: React.ReactNode;
+  handleRunClick: () => void;
 }
 
 export const TestCase: React.FC<TestCaseProps> = ({
   number,
   name,
   buttonText,
+  loading,
+  handleRunClick,
   icon,
 }) => {
   return (
@@ -25,7 +29,9 @@ export const TestCase: React.FC<TestCaseProps> = ({
         </div>
 
         <div>
-          <Button icon={icon}>{buttonText}</Button>
+          <Button onClick={handleRunClick} loading={loading} icon={icon}>
+            {buttonText}
+          </Button>
         </div>
       </div>
     </div>
